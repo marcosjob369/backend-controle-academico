@@ -26,8 +26,4 @@ public class Disciplina {
 
 	@ManyToOne
 	private Turma turma;
-
-	@OneToMany
-	@JoinColumn(name = "disciplina_id")
-	private List<MatriculaDisciplinaPessoa> matriculasDisciplinaPessoa = new ArrayList<>();
 }

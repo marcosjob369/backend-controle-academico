@@ -21,19 +21,15 @@ public class Turma {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	private int semestre;
-	
+
 	private int ano;
-	
+
 	private String sala;
-	
-	private String predio;	
+
+	private String predio;
 
 	@ManyToOne
 	private Curso curso;
-
-	@OneToMany
-	@JoinColumn(name = "turma_id")
-	private List<Disciplina> disciplinas = new ArrayList<>();
 }

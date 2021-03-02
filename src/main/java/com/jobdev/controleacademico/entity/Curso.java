@@ -22,8 +22,4 @@ public class Curso {
 	private Long id;
 
 	private String nome;
-
-	@OneToMany
-	@JoinColumn(name = "curso_id")
-	private List<Turma> turmas = new ArrayList<>();
 }

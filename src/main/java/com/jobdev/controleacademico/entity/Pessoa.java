@@ -22,8 +22,4 @@ public class Pessoa {
 	private Long id;
 
 	private String nome;
-
-	@OneToMany
-	@JoinColumn(name = "pessoa_id")
-	private List<MatriculaDisciplinaPessoa> matriculasDisciplinaPessoa = new ArrayList<>();
 }
